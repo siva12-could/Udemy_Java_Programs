@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        String input = "Java Programming";
+        String[] arr = input.split(" ");
+        int i = 0;
+        String result = "";
+        while (i < arr.length) {
+            result += new StringBuffer(arr[i]).reverse().toString()+" ";
+            i++;
+        }
+
+        System.out.println(result);
+
+    }
+}
