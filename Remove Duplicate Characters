@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class RemoveDuplicateCharacters {
+    public static void main(String[] args) {
+        String str = "aaabbbccc";
+        ArrayList<Character> list = new ArrayList<Character>();
+        for (int i = 0; i < str.length(); i++) {
+            char eachchar = str.charAt(i);
+            if (!list.contains(eachchar)) {
+                list.add(eachchar);
+            }
+
+        }
+
+        String resultstr = "";
+        for (Character ch : list) {
+            resultstr += ch;
+        }
+        System.out.println("After removing the duplicates: " + resultstr);
+    }
+}
