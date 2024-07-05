@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter the x_cordinate of the room ");
+        int x_cordinate=input.nextInt();
+        System.out.println("Enter the y_cordinate of the room ");
+        int y_cordinate=input.nextInt();
+        System.out.println("Enter the side of the room ");
+        int side=input.nextInt();
+        int cx=x_cordinate+(side/2);
+        int cy=y_cordinate+(side/2);
+        System.out.printf("The center of the room is (%d,%d) ",cx,cy);
+    }
+}
