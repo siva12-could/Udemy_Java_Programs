@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter the number of students in the class");
+        int no_students=input.nextInt();
+        System.out.println("Enter the number of teams");
+        int no_teams=input.nextInt();
+        int left_students=no_students%no_teams;
+        System.out.printf("The number of students in each team is 7 and the number of students left out is %d ",left_students);
+    }
+}
